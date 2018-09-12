@@ -6,6 +6,7 @@ import com.application.states.StoringData;
 
 public class Car{
 	
+	// A comment
 	IState state;
 	GUI myGui;
 	
