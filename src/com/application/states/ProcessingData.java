@@ -23,13 +23,17 @@ public class ProcessingData implements IState {
 	@Override
 	public void reqData(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
+		GUI.debugOutView.setText("Nothing will happen when you make a request\n"
+				+ " in the Processing Data state\n\nI'm waiting for - checkSum\n"
+				+ " = true");
 
 	}
 
 	@Override
 	public void dataRecieved(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
-
+		GUI.debugOutView.setText("data can only be recieved after it has been\n"
+				+ "sent out....this will happen from the Sending Data state.");
 	}
 
 	@Override

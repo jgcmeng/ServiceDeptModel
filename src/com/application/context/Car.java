@@ -18,7 +18,7 @@ public class Car{
 	private void initUI() {
 		
 		this.state = new StoringData();
-		this.myGui = new GUI();
+		this.myGui = new GUI(this);
         
     }
 	
@@ -40,6 +40,10 @@ public class Car{
 	
 	public void reqData() {
 		this.state.reqData(this, myGui);
+	}
+	
+	public void dataRecieved() {
+		this.state.dataRecieved(this, myGui);
 	}
 	
 }

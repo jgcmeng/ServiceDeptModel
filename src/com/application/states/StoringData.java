@@ -21,8 +21,12 @@ public class StoringData implements IState {
 
 	@Override
 	public void reqData(Car myApp, GUI myGui) {
-		// TODO Auto-generated method stub
+		// set the req button text
+		GUI.reqDataButton.setText(" -*- ");
+		GUI.debugOutView.setText(" Moving to the Processing Data state ");
+		
 		myApp.setState(new ProcessingData());
+		
 	}
 
 	@Override
