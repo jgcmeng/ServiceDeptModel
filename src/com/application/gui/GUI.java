@@ -23,11 +23,13 @@ public class GUI {
     	JLabel label  = new JLabel();
     	JButton button = new JButton();
     	
-    	//label.setBounds(130, 100, 100, 40);
+    	label.setBounds(10, 10, 100, 40);
+    	//button.setBounds(, arg1, arg2, arg3);
     	
     	
     	
     	frame.add(label);
+    	//frame.add(button);
     	frame.setSize(400, 500);
     	frame.setLayout(null);
     	frame.setVisible(true);
