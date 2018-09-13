@@ -8,7 +8,7 @@ public interface IState {
 	void returnMessage(Car myApp, GUI myGui);
 	
 	//From the example
-	void reqData(Car myApp,GUI myGui);
-	void dataRecieved(Car myApp,GUI myGui);
+	String reqData(Car myApp,GUI myGui);
+	String dataRecieved(Car myApp,GUI myGui);
 	void timeEvent(Car myApp,GUI myGui);
 }

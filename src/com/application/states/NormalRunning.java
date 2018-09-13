@@ -19,15 +19,15 @@ public class NormalRunning implements IState {
 	}
 
 	@Override
-	public void reqData(Car myApp, GUI myGui) {
+	public String reqData(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
-
+		return "";
 	}
 
 	@Override
-	public void dataRecieved(Car myApp, GUI myGui) {
+	public String dataRecieved(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
-
+		return "";
 	}
 
 	@Override
