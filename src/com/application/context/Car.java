@@ -58,11 +58,13 @@ public final class Car{
 		if(checkSum) {
 			GUI.onDo4.setText("CheckSum = FALSE");
 			this.checkSum = false;
-			this.setState(new SendingData());
+
 		}
 		else {
 			GUI.onDo4.setText("CheckSum = TRUE");
 			this.checkSum = true;
+			this.setState(new SendingData());
+			
 		}
 	}
 	
