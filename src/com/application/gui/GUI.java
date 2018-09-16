@@ -42,8 +42,8 @@ public class GUI extends JFrame {
               // Declare the buttons and the output text
               onDo1 = new JButton("reqData()");
               onDo2 = new JButton("dataRevieved");
-              onDo3 = new JButton("ev3_unattached");
-              onDo4 = new JButton("ev4-unattached");
+              onDo3 = new JButton("Timer");
+              onDo4 = new JButton("CheckSum = FALSE");
               l1 = new JTextArea("New Text");
               // Declare the split pane and panels
               splitPane = new JSplitPane();
@@ -126,6 +126,16 @@ public class GUI extends JFrame {
                      public void actionPerformed(ActionEvent e) {
                            // TODO Auto-generated method stub
                            l1.setText(car.dataRecieved()); // Call the car event and append the result to the debug
+                     }
+              });
+              //
+              // Add listener to the second event
+              onDo4.addActionListener(new ActionListener(){
+                     // Listener definition
+                     @Override
+                     public void actionPerformed(ActionEvent e) {
+                           // TODO Auto-generated method stub
+                           car.setCheckSum();
                      }
               });
        }

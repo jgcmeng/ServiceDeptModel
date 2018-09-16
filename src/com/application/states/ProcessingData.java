@@ -7,7 +7,7 @@ import com.application.state.IState;
 public class ProcessingData implements IState {
 	//There will be a handler for the chkSum change
 	//This will transition to the Sending State
-	private Long mySeconds;
+	private int mySeconds = 0;
 
 	@Override
 	public void running(Car myApp, GUI myGui) {
@@ -41,7 +41,7 @@ public class ProcessingData implements IState {
 	public void timeEvent(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
 		mySeconds++;
-		GUI.onDo3.setText(Long.toString(mySeconds));
+		GUI.onDo3.setText(Integer.toString(mySeconds));
 		
 	}
 

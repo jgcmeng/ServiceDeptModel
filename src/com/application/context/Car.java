@@ -4,14 +4,16 @@ import java.util.Timer;
 import com.application.Timer.Task;
 import com.application.gui.GUI;
 import com.application.state.IState;
+import com.application.states.SendingData;
 import com.application.states.StoringData;
 
-public class Car{
+public final class Car{
 	// A comment
 	IState state;
 	GUI myGui;
 	Timer clock;
 	Task task;
+	Boolean checkSum = false;
 	
 	public Car(){
 		 initUI();
@@ -50,6 +52,18 @@ public class Car{
 	public void timerEvent() {
 		this.state.timeEvent(this, myGui);
 		
+	}
+	
+	public void setCheckSum() {
+		if(checkSum) {
+			GUI.onDo4.setText("CheckSum = FALSE");
+			this.checkSum = false;
+			this.setState(new SendingData());
+		}
+		else {
+			GUI.onDo4.setText("CheckSum = TRUE");
+			this.checkSum = true;
+		}
 	}
 	
 }

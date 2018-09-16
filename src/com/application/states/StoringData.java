@@ -7,8 +7,7 @@ import com.application.state.IState;
 
 public class StoringData implements IState {
 	
-	private Long startTime = System.currentTimeMillis();
-	private long mySeconds = 0;
+	private int mySeconds = 0;
 
 	@Override
 	public void running(Car myApp, GUI myGui) {
@@ -39,7 +38,7 @@ public class StoringData implements IState {
 	public void timeEvent(Car myApp, GUI myGui) {
 		// TODO Auto-generated method stub
 		mySeconds++;
-		GUI.onDo3.setText(Long.toString(mySeconds));
+		GUI.onDo3.setText(Integer.toString(mySeconds));
 
 	}
 
